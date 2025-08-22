@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## MySMS
 
-Things you may want to cover:
+This application is used for sending SMS messages using the twilio API. Currently it can only send messages to the default twilio number +18777804236. 
 
-* Ruby version
+Upon signing up or logging in with your email and password you will be brought to the messages screen.
 
-* System dependencies
+Once you are at the messages screen you will see a form to create a message. 
 
-* Configuration
+Creating a message sends the message through the Twilio API and if successful adds the record to the database. 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The message is then added to the message history and if it is delivered the application updates the frontend through the use of webhooks and a websocket.
