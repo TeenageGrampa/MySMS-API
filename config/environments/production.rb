@@ -77,3 +77,4 @@ Rails.application.configure do
   config.hosts << /.*\.surge\.sh/
   config.hosts << /.*\.herokuapp\.com/
   Rails.application.config.action_cable.allowed_request_origins = ['https://mysms-dv.surge.sh']
+end
