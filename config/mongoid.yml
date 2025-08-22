@@ -1,0 +1,4 @@
+development:
+  clients:
+    default:
+      uri: mongodb+srv://danielhvoigt:Zmz414696@mysms.anl0pbx.mongodb.net/MySMS?retryWrites=true&w=majority&appName=MySMS
