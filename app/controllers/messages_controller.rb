@@ -22,7 +22,7 @@ class MessagesController < ApplicationController
             body: params[:body],
             from: ENV['TWILIO_PHONE_NUMBER'],
             to: params[:to],
-            status_callback: 'https://9275fcbfd426.ngrok-free.app/webhooks/twilio'
+            status_callback: 'https://mysms-api-7064b9d8fda0.herokuapp.com/webhooks/twilio'
           )
     if message.error_code.nil?
       @new_message = current_user.messages.new(message_params)
