@@ -32,7 +32,7 @@ gem 'devise'
 gem 'devise-jwt'
 gem 'jsonapi-serializer'
 gem 'twilio-ruby'
-gem 'warden-jwt_auth', '~> 0.6.0'
+gem 'warden-jwt_auth', '~> 0.11.0'
 gem 'redis'
 
 group :development, :test do
